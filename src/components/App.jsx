@@ -14,6 +14,9 @@ export class App extends Component {
     ],
     filter: '',
   };
+  componentDidMount = () => {
+    console.log(first);
+  };
 
   addContact = (name, number) => {
     const checkName = this.state.contacts.find(
